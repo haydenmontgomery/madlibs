@@ -1,0 +1,15 @@
+.text-form {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 10px; /* Adjust vertical spacing between form groups */
+}
+
+label {
+  min-width: 100px; /* Adjust label width as needed */
+  margin-right: 10px; /* Adjust spacing between label and input */
+}
+
+.text-input {
+  flex: 1; /* Fill remaining space */
+  max-width: 200px; /* Set maximum width for the input */
+}

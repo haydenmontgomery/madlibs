@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<form action="/story">
+    
+    {% for key in story.prompts %}
+    <div class="text-form">
+    <label for="{{key}}">{{key}}: </label>
+    <input class="text-input" type="text" placeholder="{{key}}" name="{{key}}" id="{{key}}">
+    </div>
+    {% endfor %}
+    <button>Submit!</button>
+</form>
+
+{% endblock %}
